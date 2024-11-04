@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    background-color: #0a0306;
+}
+
+.contenedor1{
+    background-image: url('../img/fondo1.jpg');
+    background-size:cover;
+    height: 75vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    
+}
+.goIndex{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 106px;
+    width: 30%;
+    color: #e3eaf0;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+    font-weight: bold;
+    
+}
+.pages{
+    display: flex;
+    width: 70%;
+    height: 106px;
+    justify-content:flex-end;
+    padding-left: 30%;
+    align-items: center;
+
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #e3eaf0;
+    text-decoration: none;
+    
+}
+.medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    flex-wrap: wrap;
+}
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #e3eaf0;
+    padding-bottom: 80px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: #e3eaf0;
+    height: 80vh;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about img{
+    max-width: 25%;
+    border-radius: 8px;
+    height: auto;
+}
+.aboutText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+}
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/fondo5.jpg');
+    background-size: cover;
+    height: 50vh;
+
+}
+.contenedor3 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contenedor3 p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.contenedor3 button {
+    display: inline-block;
+    background-color: #A50044;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+.footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.contenedor4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.footerAbout, .links, .contacto, .social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footerAbout p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+.links ul li a{
+    margin-bottom: 10px;
+    color: #A50044;
+
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    margin-bottom: 10px;
+    color: #A50044;
+
+}
+
+.contacto p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+.final {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #444444;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor1 .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pages nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .about img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .aboutText {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .contenedor4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerAbout, .links, .contacto, .social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
